@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия &laquo;Nёrds&raquo;</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/index-logo.svg" width="" height=""
+          <img src="img/index-logo.svg" width="160" height="65"
           alt="Логотип дизайн-студии Нёрдс">
         </a>
         <ul class="site-navigation">
@@ -17,8 +18,8 @@
           <li><a href="shop.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <ul class="basket-navigation">
-          <li class="basket-link">Корзина</li>
+        <ul class="service-navigation">
+          <li class="service-link">Корзина</li>
         </ul>
       </nav>
     </header>
@@ -26,30 +27,61 @@
     <main class="container">
       <h1 class="visually-hidden">Дизайн-сдудия &laquo;Nёrds&raquo;</h1>
       <section class="head-slider">
+        <!--Не нашёл как в html прописать слайдер, чтобы  сделать его доступным
+        потом оживить его в css-->
         <h2 class="visually-hidden">Верхний слайдер</h2>
+        <ul class="slides-switches">
+          <li class="slide-radio">
         <p>Долго, дорого, скурпулёзно.</p>
         <p>Математически выверенный дизайн для вашего сайта или мобильного
           приложения.</p>
         <a class="button" href="more.html">Узнать больше</a>
+          </li>
+          <li class="slide-radio">
+        <p>Любим математику как никто другой</p>
+        <p>Никакого креатива, только математические формулы для рассчета
+        идеальных пропорций</p>
+        <a class="button" href="more.html">Узнать больше</a>
+          </li>
+          <li class="slide-radio">
+        <p>Только ночь, только хардкор</p>
+        <p>Работать днем, как все? Мы против этого. Ближе к ночи работа
+        только начинается.</p>
+        <a class="button" href="more.html">Узнать больше</a>
+          </li>
+        </ul>
       </section>
 
       <section>
         <h2 class="visually-hidden">Услуги студии</h2>
         <ul>
-          <li class="servis card">
-            <h3>Все сайты</h3>
+          <!--Кнопку и текст оборачивать в одну ссылку, или поотдельности?-->
+          <li class="service-card">
+            <a href="catalog-sites.html">
+              <img src="img/illustration-1.png"
+              alt="карточка категории сайты">
+            <h3 class="service-heading">Все сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button" href="all-sites.html">Заказать</a>
+            <button class="button-site">Заказать</button>
+            </a>
           </li>
-          <li class="servis card">
-            <h3>Приложения</h3>
+          <li class="service-card">
+            <a href="apps.html">
+            <img src="img/illustration-2.png" alt="карточка категории
+            приложения для девайсов">
+            <h3 class="service-heading">Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="button" href="apps.html">Заказать</a>
+            <button class="button-app">Заказать</button>
+            </a>
           </li>
-          <li class="servis card">
-            <h3>Презентации</h3>
+          <li class="service-card">
+            <a href="presentation.html">
+            <img src="img/illustration-3.png" alt="карточка категории
+            Презентации">
+            <h3 class="service-heading">Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны</p>
-            <a class="button" href="presentation.html">Заказать</a>
+            <button class="button-present">Заказать</button>
+            </a>
           </li>
         </ul>
         </section>
@@ -63,15 +95,29 @@
               расчёт превыше креатива. Работаем не покладая рук, как роботы.
             </p>
             <h2>Выполняем заказы на разработку:</h2>
-            <p>Веб-сайтов любой сложности</p>
-            <p>Мобильных приложений для iOS и Android</p>
-            <p>Слайдшоу и видео для корпоративных презентация</p>
+            <ul class="list-order">
+              <li class="order-web">Веб-сайтов любой сложности</li>
+              <li class="list-app">Мобильных приложений для iOS и Android</li>
+              <li class="list-slideshow">Слайдшоу и видео для корпоративных
+              презентация</li>
+            </ul>
           </div>
           <div>
-            <img src="logo-about.svg" width="" height="" alt="Рекламный логотип
-            студии">
+            <img src="img/logo-about.png" width="360" height="208"
+            alt="Рекламный логотип студии">
             <p>С 2004 года любим точность во всём:</p>
-            <!---Здесь таблица или просто текстом можно сделать?!--->
+            <table class="advantage">
+              <tr>
+                <td>146%</td>
+                <td>100%</td>
+                <td>50%</td>
+              </tr>
+              <tr>
+                <td>Уровень самоотдачи</td>
+                <td>Соблюдение сроков</td>
+                <td>Минимальная предоплата</td>
+              </tr>
+            </table>
           </div>
         </section>
 
@@ -79,22 +125,22 @@
           <h2 class="visually-hidden">Партнёры студии</h2>
           <ul class="patrners-list">
             <li><a class="patners-logo" href="https://htmlacademy.ru">
-              <img src="html-logo" width="" height=""
+              <img src="img/html-logo.png" width="199" height="68"
               alt="Логотип html academy">
             </a>
             </li>
             <li><a class="patners-logo" href="#">
-              <img src="barbershop-logo" width="" height=""
-              alt="Логотип Барбершопа">
+              <img src="img/borodinski-logo.png" width="209" height="90"
+              alt="Логотип Барбершопа Бородинский">
             </a>
             </li>
             <li><a class="patners-logo" href="#">
-              <img src="pink-logo" width="" height=""
+              <img src="img/pink-logo.png" width="185" height="52"
               alt="Логотип Пинк">
             </a>
             </li>
             <li><a class="patners-logo" href="#">
-              <img src="mishka-logo" width="" height=""
+              <img src="img/mishka-logo.png" width="173" height="84"
               alt="Логотип Мишка">
             </a>
             </li>
@@ -104,14 +150,15 @@
 
       <footer class="main-footer">
         <section class="contacts">
-          <h2 class="visually-hidden">Место расположения</h2>
-          <img src="map.svg" width="" height=""
-          alt="Карта с указанием места расположения студии">
+          <h2 class="visually-hidden">Место расположения Офиса компании</h2>
+          <img src="img/map.jpg" width="1440" height="416"
+          alt="Офис компании по адресу: ул. Большая Конюшенная 19/8,
+          Санкт-Петербург">
           <p class="footer-contacts"><b>
-            Nёrds decing studio
+            Nёrds design studio
           </b></p>
           <p>
-            191186, Санкт Петербург<br>
+            191186, Санкт-Петербург<br>
             ул. Б. Конюшенная, д. 19/8
           </p>
           <p>тел. +7(812)275-75-75</p>
@@ -143,5 +190,30 @@
         </div>
       </section>
     </footer>
+
+    <section class="modal modal-write-us">
+      <h2>Напишите нам</h2>
+      <form class="massage-form" action="https://echo.htmlacademy.ru"
+        method="post">
+        <p>
+          <label class="visually-hidden" for="user-name">Ваше имя:</label>
+          <input class="name-icon-user" id="user-name" type="text" name="name"
+          placeholder="Представтесь, пожалуйста">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
+          <input class="mail-icon-user" id="user-email" type="email" name="email"
+          placeholder="Для отправки ответа">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-massage">Текст письма:</label>
+          <input class="massage-icon-user" id="user-massage" type="text"
+          name="massage" placeholder="В свободной форме">
+        </p>
+        <button class="button" type="sumbit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
   </body>
   </html>

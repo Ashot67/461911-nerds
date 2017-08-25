@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Дизайн-студия &laquo;Nёrds&raquo;</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/index-logo.svg" width="..." height="..."
+          alt="Логотип дизайн-студии Нёрдс">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="clients.html">Клиенты</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="rercontacts.html">Контакты</a></li>
+        </ul>
+        <ul class="basket-navigation">
+          <li class="basket-link">Корзина</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1 class="cotalog-heading">Магазин готовых шаблонов</h1>
+
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтры товаров</h2>
+          <h3>Стоимость:</h3>
+          <form class="filter" method="get"
+          action="https://echo.htmlacademy.ru">
+          <label class="value">
+            <input type="text" min="0">
+            <input type="text" max="15000">
+          </label>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-option"><input class="visually-hidden
+                filter-input-radio" type="radio" name="grid"
+                value="adaptive" id="adaptive-grid">
+                <label for="adaptive-grid">Адаптивная</label>
+              </label>
+              </li>
+              <li class="filter-option"><input class="visually-hidden
+                filter-input-radio" type="radio" name="grid"
+                value="fixed" checked
+                id="fixed-grid">
+                <label for="fixed-grid">Фиксированная</label>
+              </li>
+              <li class="filter-option"><input class="visually-hidden
+                filter-input-radio" type="radio" name="grid"
+                value="rubber"
+                id="rubber-grid">
+                <label for="rubber-grid">Ризиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li class="filter-options">
+                <input class="visually-hidden filter-input filter-input
+                -checkbox" type="checkbox" name="slider"
+                id="filter-slder"checked>
+                <label for="filter-slder">
+                Слайдер
+                </label>
+              </li>
+              <li class="filter-options">
+                <input class="visually-hidden filter-input filter-input
+                -checkbox" type="checkbox" name="advantage block"
+                id="advantage block">
+                <label for="advantage block">
+                Блок преимуществ
+                </label>
+              </li>
+              <li class="filter-options"><input class="visually-hidden
+                 filter-input filter-input
+              -checkbox" type="checkbox" name="news" checked
+              id="news">
+              <label for="news">
+              Новости
+              </label>
+              </li>
+              <li class="filter-options"><input class="visually-hidden
+                 filter-input filter-input
+              -checkbox" type="checkbox" name="gallery"
+              id="gallery">
+              <label for="gallery">
+                Галерея
+              </label>
+              </li>
+              <li class="filter-options"><input class="visually-hidden
+                 filter-input filter-input
+              -checkbox" type="checkbox" name="basket"
+              id="basket">
+              <label for="basket">
+                Корзина
+              </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать
+          </button>
+        </form>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Сортировка</h2>
+        <ul class="sorting">
+          <li class="sorting-visually"><a href="...">По цене</a></li>
+          <li class="sorting-visually"><a href="...">По типу</a></li>
+          <li class="sorting-visually"><a href="...">По Названию</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">Каталог макетов</h2>
+        <ul class="list-layouts">
+          <li class="catalog-item catalog-slider slide-radio">
+            <a href="sedona.html">
+              <h3>Sedona</h3>
+            <p class="catalog-item-image">
+                <img src="img/sedona-preview.jpg" width="360" height="576"
+                alt="логотип карточки Седона">
+            </p>
+            <p>Информационный сайт для туристов</p>
+            <button class="button">9 900 руб.</button>
+            </a>
+          </li>
+          <li class="catalog-item catalog-slider slide-radio">
+            <h3><a href="pink.html">Pink</a></h3>
+            <p class="catalog-item-image">
+              <a href="pink.html">
+                <img src="img/pink-preview.jpg" width="360" height="576"
+                alt="логотип карточки Pink">
+              </a>
+            </p>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+          </li>
+          <li class="catalog-item catalog-slider slide-radio">
+            <h3><a href="borodinski.html">Barbershop</a></h3>
+            <p class="catalog-item-image">
+              <a href="borodinski.html">
+                <img src="img/borodinski-preview.jpg" width="360" height="576"
+                alt="логотип карточки Бородинский">
+              </a>
+            </p>
+            <p>Сайт салоны красоты. Для мужчин, да.</p>
+          </li>
+          <li class="catalog-item catalog-slider slide-radio">
+            <h3><a href="mishka.html">Mish</a></h3>
+            <p class="catalog-item-image">
+              <a href="mishka.html">
+                <img src="img/mishka-preview.jpg" width="360" height="576"
+                alt="логотип карточки Mishka">
+              </a>
+            </p>
+            <p>Интернет-магазин  вязаных игрушек</p>
+          </li>
+          <li class="catalog-item catalog-slider slide-radio">
+            <h3><a href="a-plus.html">A Plus</a></h3>
+            <p class="catalog-item-image">
+              <a href="a-plus.html">
+                <img src="img/aplus-preview.jpg" width="360" height="576"
+                alt="Логотип карточки A-Plus">
+              </a>
+            </p>
+          </li><li class="catalog-item catalog-slider slide-radio">
+            <h3><a href="kvast.html">Kvast</a></h3>
+            <p class="catalog-item-image">
+              <a href="kvast.html">
+                <img src="img/kvast-preview.jpg" width="360" height="576"
+                alt="логотип карточки Кваст">
+              </a>
+            </p>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current">1</li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <section class="contacts">
+        <h2 class="visually-hidden">Место расположения Офиса компании</h2>
+        <img src="img/map.jpg" width="1440" height="416"
+        alt="Офис компании по адресу: ул. Большая Конюшенная 19/8,
+        Санкт-Петербург">
+        <p class="footer-contacts"><b>
+          Nёrds decing studio
+        </b></p>
+        <p>
+          191186, Санкт-Петербург<br>
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p>тел. +7(812)275-75-75</p>
+        <a class="button" href="#">Напишите нам</a>
+      </section>
+
+      <section class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="social-button">
+          <li><a class="social-logo" href="#">
+            <img src="vk-logo" width="" height=""
+            alt="Лого Вконтакте">
+          </a>
+          </li>
+          <li><a class="social-logo" href="#">
+          <img src="fb-logo" width="" height=""
+          alt="Лого Фейсбук">
+          </a>
+          </li>
+          <li><a class="social-logo" href="#">
+            <img src="instagram-logo" width="" height=""
+          alt="Лого Инстаграм">
+          </a>
+        </li>
+      </ul>
+      <div>
+      <p><b>Давайте дружить, это выгодно!</b></p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </section>
+  </footer>
+
+  <section class="modal modal-write-us">
+    <h2>Напишите нам</h2>
+    <form class="massage-form" action="https://echo.htmlacademy.ru"
+      method="post">
+      <p>
+        <label class="visually-hidden" for="user-name">Ваше имя:</label>
+        <input class="name-icon-user" id="user-name" type="text" name="name"
+        placeholder="Представтесь, пожалуйста">
+      </p>
+      <p>
+        <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
+        <input class="mail-icon-user" id="user-email" type="email" name="email"
+        placeholder="Для отправки ответа">
+      </p>
+      <p>
+        <label class="visually-hidden" for="user-massage">Текст письма:</label>
+        <input class="massage-icon-user" id="user-massage" type="text"
+        name="massage" placeholder="В свободной форме">
+      </p>
+      <button class="button" type="sumbit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+
+</body>
+</html>

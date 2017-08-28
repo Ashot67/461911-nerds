@@ -1,16 +1,149 @@
 body{
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
   font-weight: normal;
   font-family: "Roboto-Regular", Areal, sans-serif;
+  background-color: #ffffff;
+}
+
+.gray-bg {
+  background-color: #eeeeee;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation a {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  font-family: "Roboto-Regular", Areal, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main-navigation a:hover {
+  color: #fb565a;
+}
+
+.main-navigation a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.site-navigation,
+.user-navigation,
+.service-card,
+.catalog-preview,
+.filter-options,
+.social-button,
+.advantage,
+.list-order {
+  list-style: none;
+}
+
+.sorting li,
+.site-navigation li {
+  display: inline;
+}
+
+  .catalog p {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight:700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+  .catalog a {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #000000;
+    opacity: 0.3;
+    text-transform: uppercase;
+
+}
+
+  .catalog a:hover {
+    opacity: 0.6;
+}
+
+  .catalog a:active {
+    opacity: 1;
+}
+
+.button {
+  width: 160px;
+  height: 50px;
+  padding: 10px;
+  background:#fa5c60;
+  color:#ffffff;
+  font-family: "Roboto-Medium", Areal, sans-serif;
+  font-size:16px;
+  line-height:18px;
+  font-weight:500;
+  text-align:center;
+  text-transform: uppercase;
+  text-decoration:none;
+  border-radius: 3px;
+}
+
+.button-site  {
+  display: inline-block;
+  background-color: #fb565a;
+  border-radius: 2px;
+}
+
+.button-app {
+  background-color: #00ca74;
+
+}
+
+.button-present {
+  background-color: #efc84a;
+}
+
+.slide-radio a:hover{
+  background-color: #e74246;
+}
+.slide-radio a:active{
+  background-color: #d7373b;
+  color: #e16669;
+}
+
+.about-us-header {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight:700;
+}
+
+.about-us h2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto-Regular", Areal, sans-serif;
+  text-transform:uppercase;
+  font-weight:700;
+}
+
+.parnters-list:hover {
+  opacity: 0.1;
+}
+
+.massage-form,
+.name-icon-user,
+.mail-icon-user {
+  border-color: #d7dcde;
 }
 
 .cotalog-heading{
   font-size: 55px;
   line-height: 55px;
   color: #000000;
-  font-weight: normal;
   font-family: "Roboto-Medium", Areal, sans-serif;
 }
 
@@ -19,4 +152,39 @@ body{
   line-height: 30px;
   color: #283136;
   font-weight: bold;
+}
+
+.catalog p {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight:700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+
+.catalog a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
+  opacity: 0.3;
+  text-transform: uppercase;
+
+}
+
+.catalog a:hover {
+  opacity: 0.6;
+}
+
+.catalog a:active {
+  opacity: 1;
+}
+
+.filter-parameter {
+  font-size: 18px;
+  line-height: 30;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
 }

@@ -6,10 +6,11 @@
     <title>Дизайн-студия &laquo;Nёrds&raquo;</title>
   </head>
   <body>
+    <div class="gray-bg">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/index-logo.svg" width="..." height="..."
+          <img src="img/index-logo.svg" width="160" height="65"
           alt="Логотип дизайн-студии Нёрдс">
         </a>
         <ul class="site-navigation">
@@ -18,14 +19,15 @@
           <li><a href="shop.html">Магазин</a></li>
           <li><a href="rercontacts.html">Контакты</a></li>
         </ul>
-        <ul class="basket-navigation">
-          <li class="basket-link">Корзина</li>
+        <ul class="user-navigation">
+          <li class="user-link"><a href="service.html">Корзина</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="container">
-      <h1 class="cotalog-heading">Магазин готовых шаблонов</h1>
+      <h1 class="catalog-heading">Магазин готовых шаблонов</h1>
+      </div>
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтры товаров</h2>
@@ -39,19 +41,19 @@
           <fieldset>
             <legend>Сетка:</legend>
             <ul>
-              <li class="filter-option"><input class="visually-hidden
-                filter-input-radio" type="radio" name="grid"
+              <li class="filter-options">
+                <input class="visually-hidden filter-input-radio"
+                type="radio" name="grid"
                 value="adaptive" id="adaptive-grid">
                 <label for="adaptive-grid">Адаптивная</label>
-              </label>
               </li>
-              <li class="filter-option"><input class="visually-hidden
+              <li class="filter-options"><input class="visually-hidden
                 filter-input-radio" type="radio" name="grid"
                 value="fixed" checked
                 id="fixed-grid">
                 <label for="fixed-grid">Фиксированная</label>
               </li>
-              <li class="filter-option"><input class="visually-hidden
+              <li class="filter-options"><input class="visually-hidden
                 filter-input-radio" type="radio" name="grid"
                 value="rubber"
                 id="rubber-grid">
@@ -110,66 +112,57 @@
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Сортировка</h2>
+        <p>Сортировать:</p>
         <ul class="sorting">
-          <li class="sorting-visually"><a href="...">По цене</a></li>
-          <li class="sorting-visually"><a href="...">По типу</a></li>
-          <li class="sorting-visually"><a href="...">По Названию</a></li>
+          <li class="sorting-visually"><a href="#">По цене</a></li>
+          <li class="sorting-visually"><a href="#">По типу</a></li>
+          <li class="sorting-visually"><a href="#">По Названию</a></li>
         </ul>
       </section>
 
       <section>
         <h2 class="visually-hidden">Каталог макетов</h2>
         <ul class="list-layouts">
-          <li class="catalog-item catalog-slider slide-radio">
-            <a href="sedona.html">
-              <h3>Sedona</h3>
+          <li class="catalog-preview">
+              <h3><a href="sedona.html">Sedona</a></h3>
             <p class="catalog-item-image">
                 <img src="img/sedona-preview.jpg" width="360" height="576"
                 alt="логотип карточки Седона">
             </p>
             <p>Информационный сайт для туристов</p>
             <button class="button">9 900 руб.</button>
-            </a>
-          </li>
-          <li class="catalog-item catalog-slider slide-radio">
+            </li>
+          <li class="catalog-preview">
             <h3><a href="pink.html">Pink</a></h3>
             <p class="catalog-item-image">
-              <a href="pink.html">
-                <img src="img/pink-preview.jpg" width="360" height="576"
+              <img src="img/pink-preview.jpg" width="360" height="576"
                 alt="логотип карточки Pink">
-              </a>
             </p>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
           </li>
-          <li class="catalog-item catalog-slider slide-radio">
+          <li class="catalog-preview">
             <h3><a href="borodinski.html">Barbershop</a></h3>
             <p class="catalog-item-image">
-              <a href="borodinski.html">
-                <img src="img/borodinski-preview.jpg" width="360" height="576"
+              <img src="img/borodinski-preview.jpg" width="360" height="576"
                 alt="логотип карточки Бородинский">
-              </a>
             </p>
             <p>Сайт салоны красоты. Для мужчин, да.</p>
           </li>
-          <li class="catalog-item catalog-slider slide-radio">
-            <h3><a href="mishka.html">Mish</a></h3>
+          <li class="catalog-preview">
+            <h3><a href="mishka.html">Mishka</a></h3>
             <p class="catalog-item-image">
-              <a href="mishka.html">
-                <img src="img/mishka-preview.jpg" width="360" height="576"
+              <img src="img/mishka-preview.jpg" width="360" height="576"
                 alt="логотип карточки Mishka">
-              </a>
             </p>
             <p>Интернет-магазин  вязаных игрушек</p>
           </li>
-          <li class="catalog-item catalog-slider slide-radio">
+          <li class="catalog-preview">
             <h3><a href="a-plus.html">A Plus</a></h3>
             <p class="catalog-item-image">
-              <a href="a-plus.html">
-                <img src="img/aplus-preview.jpg" width="360" height="576"
+              <img src="img/aplus-preview.jpg" width="360" height="576"
                 alt="Логотип карточки A-Plus">
-              </a>
             </p>
-          </li><li class="catalog-item catalog-slider slide-radio">
+          </li><li class="catalog-preview">
             <h3><a href="kvast.html">Kvast</a></h3>
             <p class="catalog-item-image">
               <a href="kvast.html">
@@ -183,18 +176,15 @@
           <li class="pagination-item pagination-item-current">1</li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item next-catalog"><a href="#">Следующая</a></li>
+
         </ul>
       </section>
     </main>
     <footer class="main-footer">
       <section class="contacts">
         <h2 class="visually-hidden">Место расположения Офиса компании</h2>
-        <img src="img/map.jpg" width="1440" height="416"
-        alt="Офис компании по адресу: ул. Большая Конюшенная 19/8,
-        Санкт-Петербург">
-        <p class="footer-contacts"><b>
-          Nёrds decing studio
-        </b></p>
+        <p class="footer-contacts">Nёrds decing studio</p>
         <p>
           191186, Санкт-Петербург<br>
           ул. Б. Конюшенная, д. 19/8
@@ -206,18 +196,18 @@
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-button">
-          <li><a class="social-logo" href="#">
-            <img src="vk-logo" width="" height=""
+          <li><a class="social-icon" href="#">
+            <img src="img/vk-icon.svg" width="108" height="63"
             alt="Лого Вконтакте">
           </a>
           </li>
-          <li><a class="social-logo" href="#">
-          <img src="fb-logo" width="" height=""
+          <li><a class="social-icon" href="#">
+          <img src="img/fb-icon.svg" width="50" height="92"
           alt="Лого Фейсбук">
           </a>
           </li>
-          <li><a class="social-logo" href="#">
-            <img src="instagram-logo" width="" height=""
+          <li><a class="social-icon" href="#">
+            <img src="img/insta-icon.svg" width="88" height="88"
           alt="Лого Инстаграм">
           </a>
         </li>
@@ -233,24 +223,24 @@
     <h2>Напишите нам</h2>
     <form class="massage-form" action="https://echo.htmlacademy.ru"
       method="post">
-      <p>
+      <fildset>
         <label class="visually-hidden" for="user-name">Ваше имя:</label>
         <input class="name-icon-user" id="user-name" type="text" name="name"
         placeholder="Представтесь, пожалуйста">
-      </p>
-      <p>
+      </fildset>
+      <fildset>
         <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
         <input class="mail-icon-user" id="user-email" type="email" name="email"
         placeholder="Для отправки ответа">
-      </p>
-      <p>
+      </fildset>
+      <fildset>
         <label class="visually-hidden" for="user-massage">Текст письма:</label>
-        <input class="massage-icon-user" id="user-massage" type="text"
-        name="massage" placeholder="В свободной форме">
-      </p>
+        <textarea class="massage-icon-user" id="user-massage"
+        name="massage" placeholder="В свободной форме"></textarea>
+      </fildset>
       <button class="button" type="sumbit">Отправить</button>
+      <button class="button modal-close" type="button">Закрыть</button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
   </section>
 
 </body>

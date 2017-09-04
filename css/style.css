@@ -17,7 +17,7 @@ a {
   text-decoration: none;
 }
 
-.main-navigation a {
+.main-navigation a{
   font-size: 16px;
   line-height: 30px;
   color: #000000;
@@ -36,6 +36,7 @@ a {
 }
 
 .site-navigation,
+.slides-switches,
 .user-navigation,
 .service-card,
 .catalog-preview,
@@ -46,41 +47,54 @@ a {
   list-style: none;
 }
 
-.sorting li,
+.site-navigation {
+  display: flex;
+  justify-content: center;
+}
+
 .site-navigation li {
-  display: inline;
+  margin-right: 47px;
 }
 
-  .catalog p {
-    font-size: 18px;
-    line-height: 18px;
-    font-weight:700;
-    color: #000000;
-    text-transform: uppercase;
+.user-navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 141px;
 }
 
-  .catalog a {
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 500;
-    color: #000000;
-    opacity: 0.3;
-    text-transform: uppercase;
+.catalog p {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight:700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
+  opacity: 0.3;
+  text-transform: uppercase;
 
 }
 
-  .catalog a:hover {
-    opacity: 0.6;
+.catalog a:hover {
+  opacity: 0.6;
 }
 
-  .catalog a:active {
-    opacity: 1;
+.catalog a:active {
+  opacity: 1;
 }
 
 .button {
   width: 160px;
   height: 50px;
   padding: 10px;
+  border: 0;
+  box-shadow: none;
+  border-radius: 2px;
   background:#fa5c60;
   color:#ffffff;
   font-family: "Roboto-Medium", Areal, sans-serif;
@@ -90,28 +104,64 @@ a {
   text-align:center;
   text-transform: uppercase;
   text-decoration:none;
-  border-radius: 3px;
+
+}
+
+.slide-btn {
+width: 300px;
+height: 50px;
+}
+
+.service-heading {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .button-site  {
-  display: inline-block;
   background-color: #fb565a;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
+.button-site:hover {
+  background-color: #e74246;
+}
+
+.button-site:active {
+  background-color: #d7373b;
+  color: #e37376;
+}
 .button-app {
   background-color: #00ca74;
+}
 
+.button-app:hover {
+  background-color: #00bc6c;
+}
+
+.button-app:active {
+  background-color: #00aa62;
+  color: #4dc491;
 }
 
 .button-present {
   background-color: #efc84a;
 }
 
-.slide-radio a:hover{
+.button-present:hover {
+  background-color: #eab534;
+}
+
+.button-present:active {
+  background-color: #e5a722;
+  color: #edc265;
+}
+
+.slide-btn,
+.contacts a:hover {
   background-color: #e74246;
 }
-.slide-radio a:active{
+.contacts a:active {
   background-color: #d7373b;
   color: #e16669;
 }
@@ -127,7 +177,6 @@ a {
   line-height: 24px;
   font-family: "Roboto-Regular", Areal, sans-serif;
   text-transform:uppercase;
-  font-weight:700;
 }
 
 .parnters-list:hover {
@@ -187,4 +236,39 @@ a {
   color: #000000;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.service-list {
+  display: flex;
+  justify-content: center;
+}
+
+.service-card {
+  margin-right: 100px;
+}
+
+.about-us {
+  display: flex;
+}
+
+.about-us h2,
+.about-us-header {
+  color: #000000;
+}
+
+.patrners-list {
+  display: flex;
+  justify-content: center;
+}
+
+.patrners-list a:first-child {
+  margin-right: 96px;
+}
+
+.patrners-list a:nth-child(2) {
+  margin-right: 105px;
+}
+
+.patrners-list a:nth-child(3) {
+  margin-right: 123px;
 }

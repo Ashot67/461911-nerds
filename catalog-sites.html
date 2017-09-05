@@ -25,19 +25,33 @@
       </nav>
     </header>
 
-    <main class="container">
-      <h1 class="catalog-heading">Магазин готовых шаблонов</h1>
-      </div>
+    <h1 class="catalog-heading">Магазин готовых шаблонов</h1>
+  </div>
+
+
+    <main class="container-catalog">
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтры товаров</h2>
           <h3>Стоимость:</h3>
-          <form class="filter" method="get"
-          action="https://echo.htmlacademy.ru">
-          <label class="value">
-            <input type="text" min="0">
-            <input type="text" max="15000">
-          </label>
+        <form action="https://echo.htmlacademy.ru"
+          method="get">
+          <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text"
+              value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price"
+                value="15000"></label>
+            </div>
+            </div>
+        </form>
           <fieldset>
             <legend>Сетка:</legend>
             <ul>
@@ -177,7 +191,6 @@
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item next-catalog"><a href="#">Следующая</a></li>
-
         </ul>
       </section>
     </main>

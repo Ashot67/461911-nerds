@@ -9,6 +9,8 @@ body{
   background-color: #ffffff;
 }
 
+
+
 .gray-bg {
   background-color: #eeeeee;
 }
@@ -43,8 +45,19 @@ a {
 .filter-options,
 .social-button,
 .advantage,
-.list-order {
+.list-order,
+.sorting,
+.pagination-list {
   list-style: none;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-navigation {
+  display: flex;
 }
 
 .site-navigation {
@@ -107,9 +120,9 @@ a {
 
 }
 
-.slide-btn {
-width: 300px;
-height: 50px;
+.head-slider .button {
+  width: 300px;
+  height: 50px;
 }
 
 .service-heading {
@@ -271,4 +284,140 @@ height: 50px;
 
 .patrners-list a:nth-child(3) {
   margin-right: 123px;
+}
+
+.list-layouts {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.list-layouts li {
+  margin-right: 40px;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-heading {
+  text-align: center;
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+}
+
+.container-catalog {
+  background-color: pink;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.filters {
+  display: block;
+  width: 260px;
+  background: #f5eb31;
+}
+
+.catalog {
+  background: lightgreen;
+  display: inline-block;
+}
+
+.sorting {
+  background: lightblue;
+  text-align: right;
+}
+
+.list-layouts {
+  background: lightgray;
+  display: block;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Price felter */
+
+.range-filter {
+  width: 260px;
+  margin: 50px auto;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 20px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  font-size: 16px;
+  display: inline-block;;
+  width: 50%;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  width: 60px;
+  margin-left: 10px;
+  padding: 8px 10px;
+  text-align: center;
+  color:#283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
 }
